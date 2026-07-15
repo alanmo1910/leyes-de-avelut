@@ -56,6 +56,18 @@
     font-size: 1.05rem;
     margin: 0;
   }
+  .descarga { margin: 1.8rem 0 0; }
+  .descarga a {
+    display: inline-block;
+    border: 1px solid var(--linea);
+    border-radius: 999px;
+    padding: .5rem 1.3rem;
+    background: #fffdf6;
+    color: var(--enlace);
+    text-decoration: none;
+    font-size: .95rem;
+  }
+  .descarga a:hover { background: #fff; }
   .sello-double {
     border: none;
     border-top: 3px double var(--linea);
@@ -165,7 +177,7 @@
   .volver:hover { background: #fff; }
   @media print {
     body { background: #fff; }
-    .volver { display: none; }
+    .volver, .descarga { display: none; }
     nav a { color: var(--tinta); }
     h2.seccion, h3.seccion { page-break-after: avoid; }
   }
@@ -179,6 +191,7 @@
     <p class="entidad">Rabinato de la Comunidad Judía de Madrid</p>
     <h1>Reflexiones sobre la muerte y resumen de las leyes de Avelut (duelo)</h1>
     <p class="autor">Rab. Moshé Bendahan</p>
+    <p class="descarga"><a href="assets/leyes-de-avelut.pdf" download>Descargar en PDF</a></p>
   </header>
 
   <hr class="sello-double">
